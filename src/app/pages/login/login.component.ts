@@ -6,9 +6,11 @@ import {MatDialog} from '@angular/material/dialog'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  hide = true;
+
 
   constructor(private router: Router) { }
 
@@ -20,8 +22,13 @@ password!: string;
 
   login() : void {
     if(this.username == 'admin' && this.password == 'admin'){
-     this.router.navigate(["user"]);
-    }else {
+     this.router.navigate(["admin"]);
+    } else if(this.username == 'employee' && this.password == 'employee'){
+      this.router.navigate(["employee"]);
+    }else if(this.username == 'client' && this.password == 'client'){
+      this.router.navigate(["client"]);
+    }
+    else {
       alert("Invalid credentials");
     }
   }

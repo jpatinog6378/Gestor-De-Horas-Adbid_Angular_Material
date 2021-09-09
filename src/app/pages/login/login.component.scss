@@ -1,0 +1,117 @@
+
+ 
+
+  .imgFather img {
+    object-fit: cover;
+    width: 100%;
+    margin: 3% 0%;
+  }
+  .imgchildren img {
+    width: 40%;
+    margin:0% 0% -10%;
+    
+  }
+  .tituloHeader{
+    font-family: 'Montserrat';
+    font-size: 200%;
+    color: #28AD2D;
+    font-weight: medium;
+    margin-top: 1%;
+  }
+  .mat-raised-button.mat-primary {
+      background-color: #16372B !important;
+  }
+
+
+
+  // .centrarElementos {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+ 
+
+
+  // .letraAdbid  {
+  //   margin-top:2%;
+  //   padding: 0;
+  //   color: #297435;
+  //   font-size: 100%;
+  //   text-align:center;
+  // }
+  
+  .mat-form-field {
+    font-family: 'Montserrat';
+  }
+  // .mat-card{
+  //   background: rgba(255, 255, 255, 0.5);
+  // }
+
+
+  // @media(max-width: 600px) {
+  //   .bordeAncho{
+  //       width: 95%;
+        
+  //     }
+  //     .centradoPrincipal {
+  //       Display: Flex;
+  //       flex-direction: column;
+  //       Width:100%;
+  //       height: 100vh;
+  //       Justify-content: center;
+  //       Align-items:center;
+  //       Box-sizing: border-box;
+
+  //     }
+  //     img{
+  //         width: 300px;
+  //         position: absolute;
+  //         top:-5%;
+  //         left: 10%;
+  //     }
+  //     .letraAdbid h1 {
+  //       margin: 0px;
+  //       padding: 0;
+  //       color: #297435;
+  //       font-size: 200%;
+  //       text-align:center;
+    
+  //     }
+  //     .letraAdbid h2 {
+  //       margin-top:5%;
+  //       padding: 0;
+  //       color: #297435;
+  //       font-size: 100%;
+  //       text-align:center;
+  //     }
+  //     .letraAdbid h5 {
+  //       margin: 0px;
+  //       padding: 0;
+  //       color: #297435;
+  //       font-size: 80%;
+  //       text-align:center;
+    
+  //     }
+  //     .fondo {
+  //       background-image: url(/assets/img/fondo1.jfif);
+  //       background-repeat: no-repeat;
+  //       background-position: center;
+  //   }
+    
+  // }
+
+
+
+//____________________________
+
+.contenedor-1{
+  width: 100%;
+  height: 100vh;
+}
+mat-form-field {
+  width: 330px !important;
+}
+.mat-card{
+  border-radius: 15px !important;
+}

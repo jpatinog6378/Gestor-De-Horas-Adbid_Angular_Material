@@ -1,43 +1,58 @@
-<img src="/assets/img/logoAdbid.png">
-<section>
-  <div class="centradoPrincipal ">
-    <mat-card class="example-card  bordeAncho">
-      <mat-card-header class="centrarElementos">
-        <mat-card-title>Login</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <form class="example-form centrarElementos">
-          <table class="example-full-width" cellspacing="0">
-            <tr>
-              <td>
-                <mat-form-field class="example-full-width">
-                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required >
-                </mat-form-field>
-              </td>
-            </tr>
-            <tr>
-            <td><mat-form-field class="example-full-width">
-              <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
-            </mat-form-field></td>
-          </tr></table>
-        </form>
-        <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
-      </mat-card-content>
-      <mat-card-actions class="centrarElementos">
-        <button mat-raised-button (click)="login()" color="verdeAdbid" >Login</button>
-      </mat-card-actions>
+<div class="contenedor-1">
+  <div class="degrade">
+    <div class="container">
+      <div>
+        <ul class="nav justify-content-center">
+          <li class="tituloHeader">
+            <a>GESTOR DE HORAS</a>
+          </li>
+        </ul>
+      </div> 
+      <div class="row">
+        <div class="col-md-6">
+          <div class=" container imgFather">
+            <img src="../../../assets/img/fondo2.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center imgchildren">
+            <img src="../../../assets/img/logoAdbid.png" alt="" class="img-fluid">
+          </div>
+          <mat-card>
+            <form >
+                <mat-card-content  class="d-flex justify-content-center ">
+                  <div class="d-flex flex-column">
+                    <p>
+                      <mat-form-field appearance="outline">
+                          <mat-label>Ingresa tu Usuario</mat-label>
+                          <input matInput placeholder="Username" [(ngModel)]="username" name="username" required >
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
 
-    </mat-card>
-    <div class="letraAdbid">
-      <h1>Gestor de horas</h1>  
-      <h2>Realizado por Adbid Latam S.A.S</h2>
-      <h5>2021</h5>
+                      </mat-form-field>
+                  </p>
+                  <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Ingresa tu Clave</mat-label>
+                        <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+                        <button mat-icon-button matSuffix (click)="hide = !hide"
+                            [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon style="font-size: 21px !important;">
+                                {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </p>
+                  </div>
+                </mat-card-content>
+                <mat-card-actions class="d-flex justify-content-center botonInicio" >
+                    <button mat-raised-button  (click)="login()" color="primary" >Iniciar sesion</button>
+                </mat-card-actions>
+            </form>
+        </mat-card>
+        </div>
+      </div>
     </div>
-
-
-       
   </div>
+</div>
 
 
 
-</section>

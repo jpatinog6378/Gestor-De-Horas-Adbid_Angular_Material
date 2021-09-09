@@ -1,0 +1,46 @@
+.example-container {
+    height: 100% !important;
+  }
+  mat-sidenav-container{
+      height: 100vh;
+  } 
+  
+  
+  mat-sidenav{
+      width: 280px !important;
+      height: 100vh !important;
+  }
+  .menu-side-bar{
+      width: 100% !important;
+      height: 60px !important;
+  }
+  mat-list-item div mat-icon{
+      color: #757575 !important; 
+      
+  }
+  .cursor{
+    cursor: pointer !important;
+  }
+
+  .fuente{
+    font-family: Roboto, "Helvetica Neue", sans-serif !important;
+  }
+  .fondo{
+    background-color: #343a40;
+  }
+  .btn-cerrar{
+    font-size: 1.8rem !important;
+    margin-right: 20px !important;
+    color: #757575 !important; 
+  }
+  
+
+
+   //media query
+  @media only screen and (max-width: 500px) {
+    mat-sidenav {
+      width: 100% !important;
+    }
+  }
+
+  
