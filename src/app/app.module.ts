@@ -8,6 +8,7 @@ import { MaterialModule } from './material.module';
 import { EmployeeComponent } from './pages/employee/employee.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { ClientComponent } from './pages/client/client.component';
+import { IngresarTareaComponent } from './pages/employee/ingresar-tarea/ingresar-tarea.component';
 
 
 
@@ -19,6 +20,7 @@ import { ClientComponent } from './pages/client/client.component';
     EmployeeComponent,
     AdminComponent,
     ClientComponent,
+    IngresarTareaComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,7 @@ password!: string;
     if(this.username == 'admin' && this.password == 'admin'){
      this.router.navigate(["admin"]);
     } else if(this.username == 'employee' && this.password == 'employee'){
-      this.router.navigate(["employee"]);
+      this.router.navigate(["employee/Ingresar_tarea"]);
     }else if(this.username == 'client' && this.password == 'client'){
       this.router.navigate(["client"]);
     }

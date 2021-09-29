@@ -1,0 +1,32 @@
+mat-form-field{
+    max-width: 580px !important;
+    min-width: 200px !important;
+    width: 100% !important;
+}
+.alerta-form{
+    margin-top: 0px !important;
+}
+textarea{
+    min-height: 100px !important;
+}
+
+.letraAdbid{
+    font-family: 'Montserrat';
+}
+
+.resultadoHoras{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 3px;
+    font-family: 'Montserrat';
+    font-size: 150%;
+    text-align:center;
+
+}
+.colorAdbid{
+    color: #28AD2D;
+}
+
+.botonEnviar{
+    background-color: #28AD2D;
+    color: white;
+    margin: 0 auto;
+}

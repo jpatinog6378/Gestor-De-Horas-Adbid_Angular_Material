@@ -1,0 +1,109 @@
+<div class="mt-5 d-flex justify-content-center letraAdbid" style="width: 100% !important;">
+    <div class="card" style="width: 600px;">
+        <div class="card-body ">
+            <h5 class="card-title fw-bold fs-6 mt-3">Registrar Tarea</h5>
+            <form class="mt-3">
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nombre del Ejecutivo</mat-label>
+                        <mat-select>
+                            <mat-option> </mat-option>
+
+                        </mat-select>
+
+                    </mat-form-field>
+                    <div class="container alerta-form">
+                        <h5 class="text-danger">El nombre del ejecutivo es requerido *</h5>
+                    </div>
+                </div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Cliente</mat-label>
+                    <mat-select>
+                        <mat-option value="Alkosto">Alkosto</mat-option>
+                        <mat-option value="Bancolombia">Bancolombia</mat-option>
+                        <mat-option value="Otros">Otros</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="container alerta-form">
+                    <h5 class="text-danger">Seleccione un cliente por favor *</h5>
+                </div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Proyecto</mat-label>
+                    <mat-select>
+                        <mat-option value="Black Friday">Black Friday</mat-option>
+                        <mat-option value="Marcación botones">Marcación botones</mat-option>
+                        <mat-option value="Otros">Otros</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="container alerta-form">
+                    <h5 class="text-danger">Seleccione un proyecto por favor *</h5>
+                </div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Tipo de requerimiento</mat-label>
+                    <mat-select>
+                        <mat-option value="Tagging">Tagging</mat-option>
+                        <mat-option value="Leads Ads">Leads Ads</mat-option>
+                        <mat-option value="Otros">Otros</mat-option>
+                    </mat-select>
+
+                </mat-form-field>
+
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Descripción del Requerimiento</mat-label>
+                        <textarea matInput></textarea>
+                    </mat-form-field>
+                    <div class="container alerta-form">
+                        <h5 class="text-danger">La descripción del requerimiento es requerida *</h5>
+                    </div>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Fecha de tarea</mat-label>
+                        <!-- #docregion toggle -->
+                        <input matInput [min]="minDate" [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                        <!-- #enddocregion toggle -->
+                    </mat-form-field>
+                    <div class="container alerta-form">
+                        <h5 class="text-danger">La fecha de la tarea es requerida *</h5>
+                    </div>
+                    <div class="container alerta-form">
+                        <h5 class="text-danger">Debe ser una fecha valida *</h5>
+                    </div>
+
+                </div>
+                <p class="resultadoHoras ">Tiempo: {{total}} Horas</p>
+                <div class="row md-3">
+                    <div class="col">
+                        <button mat-raised-button class="colorAdbid" (click)="sumar60()">60 Minutos</button>
+                    </div>
+                    <div class="col">
+                        <button mat-raised-button class="colorAdbid" (click)="sumar30()">30 Minutos</button>
+                    </div>
+                    <div class="col">
+                        <button mat-raised-button class="colorAdbid"(click)="sumar15()">15 Minutos</button>
+                    </div>
+                    <div class="col">
+                        <button mat-raised-button style="color: red;" (click)="borrarMin()">Borrar</button>
+                    </div>
+                </div>
+                
+                
+                <!-- <div class="mt-3" >
+                    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                    <h4 class="text-center mt-1"><label>Subiendo el requerimiento al sistema...</label></h4>
+            
+                </div> -->
+                <div >
+                    <button mat-raised-button  class="botonEnviar d-flex mt-3 mt-md-5">Agregar
+                        tarea</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="../../../../assets/JS/prueba.js"></script>
+</div>
